@@ -11,12 +11,14 @@ import project.student.management.interfaces.XetTotNghiep;
  *
  * @author duongpt
  */
-public abstract class SinhVien implements XetTotNghiep{
+public abstract class SinhVien implements XetTotNghiep {
     private String hoTen;
     private String maSV;
     private String gioiTinh;
     private String email;
     private String khoaHoc;
+    private String nganhHoc;
+    private int tongSoTinChi;
     private ArrayList<MonHoc> listMonHoc;
 
     public SinhVien(String hoTen, String maSV, String gioiTinh, String email, String khoaHoc, ArrayList<MonHoc> listMonHoc) {

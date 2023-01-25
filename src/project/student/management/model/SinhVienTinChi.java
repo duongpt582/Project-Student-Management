@@ -28,9 +28,10 @@ public class SinhVienTinChi extends SinhVien{
 
     @Override
     public boolean xetTotNghiep() {
-        super.xetTotNghiep(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        super.xetTotNghiep(); 
         return false;
     }
+    
     
     
 }
