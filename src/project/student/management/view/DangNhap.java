@@ -40,7 +40,6 @@ public class DangNhap extends javax.swing.JFrame {
         jLabel1.setText("Quản lý sinh viên");
 
         textField_DangNhap.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
-        textField_DangNhap.setText("Nhập tài khoản");
         textField_DangNhap.setToolTipText("Nhập tài khoản");
         textField_DangNhap.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 4, 0, new java.awt.Color(255, 204, 153)));
         textField_DangNhap.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -50,7 +49,6 @@ public class DangNhap extends javax.swing.JFrame {
             }
         });
 
-        passwordField.setText("PassWord");
         passwordField.setToolTipText("Nhập mật khẩu");
         passwordField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 4, 0, new java.awt.Color(255, 204, 153)));
         passwordField.addMouseListener(new java.awt.event.MouseAdapter() {
