@@ -15,17 +15,31 @@ public abstract class SinhVien implements XetTotNghiep{
     private String hoTen;
     private String maSV;
     private String gioiTinh;
+    private String ngaySinh;
     private String email;
-    private String khoaHoc;
+    private int khoaHoc;
+    private String nganhHoc;
     private ArrayList<MonHoc> listMonHoc;
 
-    public SinhVien(String hoTen, String maSV, String gioiTinh, String email, String khoaHoc, ArrayList<MonHoc> listMonHoc) {
+    public SinhVien(String hoTen, String maSV, String gioiTinh, String ngaySinh, String email, int khoaHoc, String nganhHoc, ArrayList<MonHoc> listMonHoc) {
         this.hoTen = hoTen;
         this.maSV = maSV;
         this.gioiTinh = gioiTinh;
+        this.ngaySinh = ngaySinh;
         this.email = email;
         this.khoaHoc = khoaHoc;
+        this.nganhHoc = nganhHoc;
         this.listMonHoc = listMonHoc;
+    }
+    
+    public SinhVien(String hoTen, String maSV, String gioiTinh, String ngaySinh, String email, int khoaHoc, String nganhHoc){
+        this.hoTen = hoTen;
+        this.maSV = maSV;
+        this.gioiTinh = gioiTinh;
+        this.ngaySinh = ngaySinh;
+        this.email = email;
+        this.khoaHoc = khoaHoc;
+        this.nganhHoc = nganhHoc;
     }
 
     public String getHoTen() {
@@ -52,6 +66,14 @@ public abstract class SinhVien implements XetTotNghiep{
         this.gioiTinh = gioiTinh;
     }
 
+    public String getNgaySinh() {
+        return ngaySinh;
+    }
+
+    public void setNgaySinh(String ngaySinh) {
+        this.ngaySinh = ngaySinh;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -60,12 +82,20 @@ public abstract class SinhVien implements XetTotNghiep{
         this.email = email;
     }
 
-    public String getKhoaHoc() {
+    public int getKhoaHoc() {
         return khoaHoc;
     }
 
-    public void setKhoaHoc(String khoaHoc) {
+    public void setKhoaHoc(int khoaHoc) {
         this.khoaHoc = khoaHoc;
+    }
+
+    public String getNganhHoc() {
+        return nganhHoc;
+    }
+
+    public void setNganhHoc(String nganhHoc) {
+        this.nganhHoc = nganhHoc;
     }
 
     public ArrayList<MonHoc> getListMonHoc() {

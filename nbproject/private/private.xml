@@ -3,8 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/Project-Student-Management/src/project/student/management/view/ThemDiem.java</file>
             <file>file:/D:/Project-Student-Management/src/project/student/management/view/Menu.java</file>
+=======
+            <file>file:/D:/OOP/Project-Student-Management/src/project/student/management/view/Menu.java</file>
+            <file>file:/D:/OOP/Project-Student-Management/src/project/student/management/view/ThemSV.java</file>
+            <file>file:/D:/OOP/Project-Student-Management/src/project/student/management/view/Home.java</file>
+            <file>file:/D:/OOP/Project-Student-Management/src/project/student/management/controller/QuanLyImpl.java</file>
+            <file>file:/D:/OOP/Project-Student-Management/src/project/student/management/view/ChuongTrinh.java</file>
+>>>>>>> 81faa103bee267c4603b7564a36b5262dbd6d4fa
         </group>
     </open-files>
 </project-private>
