@@ -278,6 +278,7 @@
                 <StringItem index="2" value="K&#x1ef9; thu&#x1ead;t C&#x1a1; &#x111;i&#x1ec7;n t&#x1eed;"/>
               </StringArray>
             </Property>
+            <Property name="selectedIndex" type="int" value="-1"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>

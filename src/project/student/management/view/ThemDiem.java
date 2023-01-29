@@ -36,7 +36,7 @@ public class ThemDiem extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         themdiemButton = new com.k33ptoo.components.KButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         kGradientPanel1.setkEndColor(new java.awt.Color(153, 255, 255));
         kGradientPanel1.setkStartColor(new java.awt.Color(204, 255, 255));
@@ -54,7 +54,6 @@ public class ThemDiem extends javax.swing.JFrame {
         });
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
-        jComboBox2.setSelectedIndex(-1);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("Ngành học");

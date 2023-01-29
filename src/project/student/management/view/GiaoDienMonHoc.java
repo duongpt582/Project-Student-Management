@@ -30,8 +30,21 @@ public class GiaoDienMonHoc extends javax.swing.JPanel {
         kGradientPanel1 = new com.k33ptoo.components.KGradientPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        timkiemField = new javax.swing.JTextField();
         themdiemButton = new com.k33ptoo.components.KButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        maSVTextField = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        nganhhocCombobox = new javax.swing.JComboBox<>();
+        monhocCombobox = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        kButton1 = new com.k33ptoo.components.KButton();
 
         kGradientPanel1.setkEndColor(new java.awt.Color(255, 255, 255));
         kGradientPanel1.setkGradientFocus(0);
@@ -58,13 +71,6 @@ public class GiaoDienMonHoc extends javax.swing.JPanel {
             jTable1.getColumnModel().getColumn(9).setPreferredWidth(20);
         }
 
-        timkiemField.setText("Nhập tên môn học...");
-        timkiemField.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                timkiemFieldMouseClicked(evt);
-            }
-        });
-
         themdiemButton.setText("Thêm điểm");
         themdiemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,29 +78,111 @@ public class GiaoDienMonHoc extends javax.swing.JPanel {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setText("Ngành học");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel2.setText("Mã SV");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setText("Điểm GK");
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel4.setText("Môn học");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setText("Kì học");
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel6.setText("Điểm CK");
+
+        nganhhocCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Công nghệ thông tin", "Quản trị kinh doanh", "Kỹ thuật Cơ điện tử" }));
+        nganhhocCombobox.setSelectedIndex(-1);
+        nganhhocCombobox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nganhhocComboboxActionPerformed(evt);
+            }
+        });
+
+        jComboBox1.setMaximumRowCount(8);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cấu trúc dữ liệu và giải thuật", "Hệ điều hành", "Mạng máy tính", "Cơ sở dữ liệu", "Lập trình hướng đối tượng", "Quản trị kinh doanh", "Quản trị chiến lược", "Đạo đức kinh doanh", "Quản trị quá trình kinh doanh", "Quản trị đa văn hóa", "Sức bền vật liệu", "Cơ sở thiết kế máy", "Nguyên lý kỹ thuật điện tử", "Linh kiện bán dẫn và vi mạch", "Kỹ thuật đo lường và cảm biến", " " }));
+
+        kButton1.setText("Tìm kiếm");
+        kButton1.setkBackGroundColor(new java.awt.Color(204, 255, 204));
+        kButton1.setkEndColor(new java.awt.Color(0, 204, 204));
+        kButton1.setkHoverForeGround(new java.awt.Color(255, 51, 0));
+        kButton1.setkHoverStartColor(new java.awt.Color(255, 204, 255));
+
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1184, Short.MAX_VALUE)
-            .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(timkiemField, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jScrollPane1)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(themdiemButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85))
+                .addGap(32, 32, 32))
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(maSVTextField)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
+                        .addGap(141, 141, 141)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3))
+                        .addGap(35, 35, 35)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField4)
+                            .addComponent(nganhhocCombobox, 0, 144, Short.MAX_VALUE))
+                        .addGap(99, 99, 99)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel4))
+                        .addGap(41, 41, 41)
+                        .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(monhocCombobox, 0, 144, Short.MAX_VALUE)
+                            .addComponent(jTextField3)))
+                    .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                        .addGap(375, 375, 375)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(54, 54, 54)
+                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(165, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(timkiemField, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addGap(31, 31, 31)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel4)
+                    .addComponent(maSVTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nganhhocCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(monhocCombobox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(86, 86, 86)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
                 .addComponent(themdiemButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -109,23 +197,61 @@ public class GiaoDienMonHoc extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void timkiemFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_timkiemFieldMouseClicked
-        // TODO add your handling code here:
-        timkiemField.setText("");
-    }//GEN-LAST:event_timkiemFieldMouseClicked
-
     private void themdiemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_themdiemButtonActionPerformed
         // TODO add your handling code here:
-        ThemDiem themDiem = new ThemDiem();
-        themDiem.setVisible(true);
+        
     }//GEN-LAST:event_themdiemButtonActionPerformed
+
+    private void nganhhocComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nganhhocComboboxActionPerformed
+        // TODO add your handling code here:
+        if(nganhhocCombobox.getSelectedIndex() == 0) {
+            monhocCombobox.removeAllItems();
+            monhocCombobox.addItem("Cấu trúc dữ liệu và giải thuật");
+            monhocCombobox.addItem("Hệ điều hành");
+            monhocCombobox.addItem("Mạng máy tính");
+            monhocCombobox.addItem("Cơ sở dữ liệu");
+            monhocCombobox.addItem("Lập trình hướng đối tượng");
+            
+        } 
+        // quan tri kinh doanh
+        if(nganhhocCombobox.getSelectedIndex() == 1) {
+            monhocCombobox.removeAllItems();
+            monhocCombobox.addItem("Quản trị kinh doanh");
+            monhocCombobox.addItem("Quản trị chiến lược");
+            monhocCombobox.addItem("Đạo đức kinh doanh");
+            monhocCombobox.addItem("Quản trị quá trình kinh doanh");
+            monhocCombobox.addItem("Quản trị đa văn hóa");
+        }
+        //ki thuat co dien tu
+        if(nganhhocCombobox.getSelectedIndex() == 2) {
+            monhocCombobox.removeAllItems();
+            monhocCombobox.addItem("Sức bền vật liệu");
+           monhocCombobox.addItem("Cơ sở thiết kế máy");
+            monhocCombobox.addItem("Nguyên lý kỹ thuật điện tử");
+            monhocCombobox.addItem("Linh kiện bán dẫn và vi mạch");
+            monhocCombobox.addItem("Kỹ thuật đo lường và cảm biến");
+        }
+    }//GEN-LAST:event_nganhhocComboboxActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private com.k33ptoo.components.KButton kButton1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
+    private javax.swing.JTextField maSVTextField;
+    private javax.swing.JComboBox<String> monhocCombobox;
+    private javax.swing.JComboBox<String> nganhhocCombobox;
     private com.k33ptoo.components.KButton themdiemButton;
-    private javax.swing.JTextField timkiemField;
     // End of variables declaration//GEN-END:variables
 }
